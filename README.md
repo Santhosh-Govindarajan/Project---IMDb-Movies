@@ -12,11 +12,11 @@ The website chosen for this project is [IMDb 2024 Movie List](https://www.imdb.c
 
 **Step 1:** Scraped data from IMDb using Selenium to handle dynamic content.
 
-**Step 2:** Cleaned and processed the extracted data using Regular Expressions and Python loops, then stored it as a CSV file.
+**Step 2:** Cleaned and processed the extracted data using Regular Expressions and Python loops, then stored it as DataFrame and converted as a CSV file.
 
 **Step 3:** Loaded the CSV file into a Pandas DataFrame. Using MySQL connector, I connected VS Code with TiDB Cloud (instead of a local server), created a database, and stored the DataFrame.
 
-**Step 4:** Retrieved and filtered data from TiDB Cloud by executing SQL queries and displayed the results interactively using Streamlit. Libraries such as Pandas, Matplotlib, Seaborn, and Plotly were used for visualization.
+**Step 4:** Retrieved and filtered data using SQL queries and displayed the results interactively using Streamlit. Libraries such as Pandas, Matplotlib, Seaborn, and Plotly were used for visualization.
 
 **Step 5:** Incorporated HTML, CSS, and additional technologies to enhance the Streamlit app's appearance and functionality.
 
