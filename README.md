@@ -1,31 +1,91 @@
-# Project---IMDb-Movies
-**README for GitHub**
+📅 Project Introduction
 
-# IMDb Data Scraping and Analysis Project
+Navigating through the vast ocean of new movie releases can be overwhelming. This project automates the process of extracting and analyzing movie data from IMDb for the year 2024, focusing on five key genres. The end goal is an interactive, user-friendly dashboard that allows users to explore patterns, trends, and top performers in the movie industry.
 
-## Project Overview
-This is my first project after beginning my journey into Data Science. The objective was to extract data from a website, clean it, apply filters, and display the output in a user-friendly manner.
+🛠️ Technologies Used
 
-The website chosen for this project is [IMDb 2024 Movie List](https://www.imdb.com/search/title/?title_type=feature&release_date=2024-01-01,2024-12-31).
+Python: Data handling with Pandas; visualizations with Seaborn, Matplotlib, and Plotly; SQL operations with SQLAlchemy.
 
-## Steps Involved
+Selenium: Web scraping automation.
 
-**Step 1:** Scraped data from IMDb using Selenium to handle dynamic content.
+MySQL: Database creation and data storage.
 
-**Step 2:** Cleaned and processed the extracted data using Regular Expressions and Python loops, then stored it as DataFrame and converted as a CSV file.
+Streamlit: Building the interactive dashboard.
 
-**Step 3:** Loaded the CSV file into a Pandas DataFrame. Using MySQL connector, I connected VS Code with TiDB Cloud (instead of a local server), created a database, and stored the DataFrame.
+⚡ Project Workflow
 
-**Step 4:** Retrieved and filtered data using SQL queries and displayed the results interactively using Streamlit. Libraries such as Pandas, Matplotlib, Seaborn, and Plotly were used for visualization.
+1. Web Scraping
 
-**Step 5:** Incorporated HTML, CSS, and additional technologies to enhance the Streamlit app's appearance and functionality.
+Utilized Selenium to scrape IMDb pages, collecting essential metadata for each movie, including:
 
-**Step 6:** Throughout this project, I gained hands-on experience in data scraping, cleaning, database management, visualization, and application deployment. This has been a wonderful and enriching journey.
+Title
 
-## Conclusion
-This project marks a stepping stone in my Data Science career. I am excited to continue exploring, learning, and building more advanced projects in the future.
+Genre
 
----
+IMDb Rating
+
+Duration
+
+Number of Votes
+
+The scraper automates navigation through genre-specific pages and saves the results into a CSV file.
+
+2. Data Cleaning & Preprocessing
+
+Using Pandas, the collected data was cleaned, structured, and transformed for effective analysis and visualization.
+
+3. Database Management
+
+Created a MySQL database (imdb) with a table named imdb_2024. Data was seamlessly pushed from Python into MySQL using MySQL Connector.
+
+4. Dashboard Development
+
+Built a fully interactive dashboard using Streamlit, featuring:
+
+Sidebar filters for Genre, Rating, Votes, and Duration.
+
+Dynamic charts powered by Plotly, Seaborn, and Matplotlib.
+
+📊 Key Features of the Dashboard
+
+🏅 Top 10 Movies 
+
+📊 Genre Analysis
+
+⏱️ Average Duration by Genre
+
+🗳️ Voting Trends by Genres
+
+🎥Genre based Rating
+
+⭐ Rating Distribution 
+
+📈 Ratings vs Votes Correlation
+
+🥧 Most Popular Genres by Voting
+
+🎞️ Best Movies per Genre Table
+
+Each visualization is designed to answer specific analytical questions, offering both high-level overviews and deep dives into the data.
+
+📂 Repository Structure
+
+├── GUVI.ipynb              # Web scraping and data cleaning notebook
+├── imdb.py          # Streamlit app script
+├── IMDB_movies.csv # Final cleaned dataset
+└── README.md               # Project documentation (this file)
+
+👋 Acknowledgements
+
+IMDb for providing the movie data.
+
+Open-source libraries and their contributors who made this project possible.
+
+📧 Contact
+
+For any questions, suggestions, or collaborations, feel free to reach out through GitHub Issues or connect with me via LinkedIn!
+
+www.linkedin.com/in/santhosh-govindarajan
 
 
 
